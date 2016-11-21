@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	padding-top: 50px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.carousel {
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+	top: calc(50vh - 400px);
+	overflow: hidden;
+	border: 1px solid rgba(0,0,0,.2);
+}
+
+.carousel .slider {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 3000px;
+}
+
+.carousel .slider li {
+	float: left;
+	width: 600px;
+	height: 300px;
+}
+
+.left:hover .fa-chevron-left, .right:hover .fa-chevron-right {
+	color: rgba(0, 0, 0, .5);
+	cursor: pointer;
+}
+
+.fa-chevron-right, .fa-chevron-left {
+	position: absolute;
+	top: 150px;
+	font-size: 40px;
+	color: rgba(255,255,255,0.5);
+	transition: .5s;
+}
+
+.fa-chevron-left {
+	left: 20px;
+}
+
+.fa-chevron-right {
+	right: 20px;
+}
+
+.smalldot {
+	display: flex;
+	justify-content: center;
+	list-style-type: circle;
+}
+
+.smalldot li {
+	font-size: 25px;
+	width: 10px;
+	height: 10px;
+	margin: 5px 5px;
+	cursor: pointer;
+}
+
+.disc {
+	list-style-type: disc;	
+}
